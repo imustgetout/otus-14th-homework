@@ -50,7 +50,7 @@ CMD or ENTRYPOINT or both
 Попробовал сделать это в докере из образа centos7:
 
     yum update
-    yum install -y ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2 wget
+    yum install -y ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2 wget perl
     cd /usr/src/
     wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.11.tar.xz
     tar -xvf linux-4.17.11.tar.xz
