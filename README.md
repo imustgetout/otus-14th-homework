@@ -58,5 +58,15 @@ CMD or ENTRYPOINT or both
     make menuconfig
     Выбрать Save->Exit.
     make bzImage
-    
+ 
+ Вывод:
+
+    Setup is 15356 bytes (padded to 15360 bytes).
+    System is 8013 kB
+    CRC 2607950c
+    Kernel: arch/x86/boot/bzImage is ready  (#1)
+    [root@cd487e5896df linux-4.17.11]# ls -al arch/x86/boot/bzImage
+    -rw-r--r--. 1 root root 8220208 Oct 29 20:41 arch/x86/boot/bzImage
+    [root@cd487e5896df linux-4.17.11]#
+ 
  Готово.
