@@ -1,7 +1,7 @@
 
 ### Dockerfile
 
-Создайте свой кастомный образ nginx на базе alpine. 
+Создайте свой кастомный образ nginx на базе alpine. (ссылка на образ: https://hub.docker.com/repository/docker/imustgetout/nginxalpine )
 
 После запуска nginx должен отдавать кастомную страницу (достаточно изменить дефолтную страницу nginx)
 
