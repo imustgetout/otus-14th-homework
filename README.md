@@ -37,3 +37,23 @@ CMD or ENTRYPOINT or both
 Мне больше нравится определение в сравнении с програмированием: 
 
 Образ - это класс, контейнер -объект.
+
+### Можно ли в контейнере собрать ядро?
+
+Ничто не мешает скомпилировать своё ядро в контейнере. Только смысла в этом нет(я не смог придумать, но возможно что все-таки это где-то нужно),
+
+т.к. использовать его в контейнере по определению нельзя.
+
+Попробовал сделать это в докере из образа centos7:
+
+    yum update
+    yum install -y ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2 wget
+    cd /usr/src/
+    wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.11.tar.xz
+    tar -xvf linux-4.17.11.tar.xz
+    cd linux-4.17.11/
+    make menuconfig
+    Выбрать Save->Exit.
+    make bzImage
+    
+ Готово.
